@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "titulo": "The Avengers",
+    "calificacion": 8.5,
+    "imagen": "http://localhost:3000/img/avengers.jpg"
+  },
+  {
+    "id": "2",
+    "titulo": "Blac Widow",
+    "calificacion": 6.5,
+    "imagen": "http://localhost:3000/img/black-widow.jpg"
+  }
+]
