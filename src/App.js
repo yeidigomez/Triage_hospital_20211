@@ -4,11 +4,15 @@ import Layout from "./Layout";
 import Peliculas from "./components/Peliculas/Peliculas";
 import Pelicula from "./components/Pelicula/Pelicula";
 import Login from "./components/Login/Login";
+import GuardarPelicula from "./components/GuardarPelicula/GuardarPelicula";
 import { UserContext } from "./contexts/UserContext";
 import { useState } from "react";
 
 function App() {
-  const [user, setUser] = useState({ isLoggedIn: false });
+  const userStorage = JSON.parse(localStorage.getItem("user"));
+  const [user, setUser] = useState(
+    userStorage ? userStorage : { isLoggedIn: false }
+  );
 
   return (
     <Router>
@@ -22,6 +26,9 @@ function App() {
           </Layout>
           <Layout path="/login">
             <Login />
+          </Layout>
+          <Layout path="/guardar-pelicula/:id?">
+            <GuardarPelicula />
           </Layout>
           <Layout exact path="/">
             <Peliculas />

@@ -6,6 +6,11 @@ import { UserContext } from "../../contexts/UserContext";
 function Header({ menuClickedFunction }) {
   const { user, setUser } = useContext(UserContext);
 
+  const cerrarSesion = () => {
+    setUser({ isLoggedIn: false });
+    localStorage.removeItem("user");
+  };
+
   return (
     /* CABECERA */
     <header id="cabecera">
@@ -27,10 +32,7 @@ function Header({ menuClickedFunction }) {
                 <i className="fas fa-user"></i>
               </Link>
             ) : (
-              <button
-                className="boton-logout"
-                onClick={() => setUser({ isLoggedIn: false })}
-              >
+              <button className="boton-logout" onClick={() => cerrarSesion()}>
                 <i className="fas fa-sign-out-alt"></i>
               </button>
             )}

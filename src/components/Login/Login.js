@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { UserContext } from "../../contexts/UserContext";
+import { useHistory } from "react-router-dom";
 import "./Login.css";
 
 // async function login(credenciales) {
@@ -25,6 +26,8 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const history = useHistory();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -36,6 +39,8 @@ function Login() {
 
     console.log(userInfo);
     setUser(userInfo);
+    localStorage.setItem("user", JSON.stringify(userInfo));
+    history.push("/");
   };
 
   return (
