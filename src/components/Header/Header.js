@@ -23,7 +23,7 @@ function Header({ menuClickedFunction }) {
           <i className="fas fa-bars"></i>
         </button>
         <a href="/" className="logo">
-          Movies
+          Hospital Divino niño
         </a>
         <ul id="botones-cabecera">
           <li>

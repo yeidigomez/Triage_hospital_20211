@@ -64,26 +64,26 @@ function GuardarPelicula() {
   return (
     <>
       <h1 className="mb-5">
-        <i className="fas fa-film"></i> Guardar Pelicula
+        <i className="fas fa-film"></i> Registro de Paciente
       </h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formGroupTitulo">
-          <Form.Label>Titulo</Form.Label>
+          <Form.Label>Nombre</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Título de la pelicula"
-            name="titulo"
+            placeholder="Nombre del Paciente"
+            name="nombre"
             onChange={handleChange}
             value={formData.titulo}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupSinopsis">
-          <Form.Label>Sinopsis</Form.Label>
+          <Form.Label>Apellidos</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
-            placeholder="Sinopsis de la pelicula"
-            name="sinopsis"
+            placeholder="Apellidos del Paciente"
+            name="apellidos"
             onChange={handleChange}
             value={formData.sinopsis}
           />
@@ -95,11 +95,11 @@ function GuardarPelicula() {
             className="mb-3"
             controlId="formGroupDirector"
           >
-            <Form.Label>Director</Form.Label>
+            <Form.Label>EPS</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Director de la pelicula"
-              name="director"
+              placeholder="EPS del Paciente"
+              name="eps"
               onChange={handleChange}
               value={formData.director}
             />
@@ -144,7 +144,7 @@ function GuardarPelicula() {
           />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Guardar Pelicula
+          Registrar
         </Button>
       </Form>
     </>
