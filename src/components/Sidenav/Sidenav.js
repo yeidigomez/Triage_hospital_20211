@@ -15,17 +15,17 @@ function Sidenav({ open, menuClickedFunction }) {
       <ul>
         <li>
           <Link to="/peliculas">
-            <i className="fas fa-film"></i> Peliculas
+            <i className="fas fa-film"></i> Ingresar paciente 
           </Link>
         </li>
         <li>
           <Link to="/series">
-            <i className="fas fa-tv"></i> Series
+            <i className="fas fa-tv"></i> Modificar paciente
           </Link>
         </li>
         <li>
           <Link to="/actores">
-            <i className="fas fa-user-friends"></i> Actores
+            <i className="fas fa-user-friends"></i> Buscar paciente
           </Link>
         </li>
         <li>
