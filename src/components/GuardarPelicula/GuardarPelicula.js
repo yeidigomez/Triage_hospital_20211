@@ -98,7 +98,7 @@ function GuardarPelicula() {
             <Form.Label>Fecha de Nacimiento</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Fecha de Nacimiento"
+              placeholder="DD/MM/AAAA"
               name="nacimiento"
               onChange={handleChange}
               value={formData.nacimiento}
