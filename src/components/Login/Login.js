@@ -48,7 +48,7 @@ function Login() {
       <form className="text-white" onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
-            Email
+            Correo electrónico
           </label>
           <input
             type="email"

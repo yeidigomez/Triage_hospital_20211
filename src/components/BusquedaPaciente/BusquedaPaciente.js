@@ -38,7 +38,7 @@ function BusquedaPaciente() {
     return (
         <>
         <h1 className="titulo">
-          <i className=""></i> Busqueda de Pacientes
+          <i className=""></i> Búsqueda de Pacientes
         </h1>
         <br>
 
@@ -48,7 +48,7 @@ function BusquedaPaciente() {
         </a> */}
 
         <InputGroup className="mb-3">
-            <Form.Label className="mt-2">Busqueda de Paciente por Documento:</Form.Label>
+            <Form.Label className="mt-2">Búsqueda de Paciente por Documento:</Form.Label>
             <FormControl
             id= "formulario1"
             placeholder="Numero de Documento"
@@ -61,12 +61,14 @@ function BusquedaPaciente() {
         </InputGroup>
 
         <InputGroup>
-            <Form.Label>Busqueda de Paciente por Nombre/Apellido   :</Form.Label>
+            <Form.Label>
+              Búsqueda de Paciente por Nombre/Apellido:
+            </Form.Label>
             <FormControl
-            id= "formulario2"
-            placeholder="Nombres y/o Apellidos"
-            aria-label="Recipient's username with two button addons"
-            />
+              id= "formulario2"
+              placeholder="Nombres y/o Apellidos"
+              aria-label="Recipient's username with two button addons"
+              />
             <Button variant="outline-secondary">Buscar</Button>
         </InputGroup>
         </>

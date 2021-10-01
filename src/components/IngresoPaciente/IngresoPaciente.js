@@ -88,12 +88,9 @@ function GuardarPelicula() {
             value={formData.apellidos}
           />
         </Form.Group>
-        
         <Row>
           <Form.Group
             as={Col}
-            sm="12"
-            md="6"
             lg="4"
             className="mb-3"
             controlId="formGroupNacimiento"
@@ -107,7 +104,6 @@ function GuardarPelicula() {
               value={formData.nacimiento}
             />
           </Form.Group>
-          {/* <div className="d-flex justify-content-xxl-between"> */}
           <Form.Group
             as={Col}
             sm="12"
@@ -127,16 +123,10 @@ function GuardarPelicula() {
             />
           </Form.Group>
         </Row>
-        {/* </div> */}
-        <Form.Group className="mb-5" controlId="formGroupDocumento">
+        <Form.Group className="mb-4" controlId="formGroupDocumento">
  
         <Row className="mb-3">
-          <Form.Group as={Col} 
-           sm="12"
-           md="6"
-           lg="4"
-           controlId="formGridTipo">
-            
+          <Form.Group as={Col} controlId="formGridTipo">
             <Form.Label>Tipo de Documento</Form.Label>
             <Form.Select defaultValue="Tipo">
               <option>Cédula de Ciudadania</option>
@@ -147,21 +137,12 @@ function GuardarPelicula() {
             </Form.Select>
           </Form.Group> 
  
-          <Form.Group as={Col} 
-           sm="12"
-           md="6"
-           lg="4"
-           controlId="formGridCDocumento">
+          <Form.Group as={Col} controlId="formGridCDocumento">
             <Form.Label>Numero de Documento</Form.Label>
             <Form.Control />
           </Form.Group>
  
-          <Form.Group as={Col} 
-          sm="12"
-          md="6"
-          lg="4"
-          controlId="formGridEPS">
-            
+          <Form.Group as={Col} controlId="formGridEPS">
             <Form.Label>EPS</Form.Label>
             <Form.Select defaultValue="EPS">
             <option>SURA</option>

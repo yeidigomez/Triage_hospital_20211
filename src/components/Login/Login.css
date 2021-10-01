@@ -1,13 +1,15 @@
 form {
-  background-color: #021617;
-  padding: 20px;
+  background-color: #586F7C; 
+  margin-top: 40px;
+  padding: 60px;
   border-radius: 10px;
 }
 form button {
-  background-color: #06282b !important;
-  color: #97c8eb !important;
+  background-color: #2F4550 !important;
+  color: #fff !important;
+  font-size: 19px !important;
   width: 100%;
 }
 form button:hover {
-  background-color: #083135 !important;
+  background-color: #263740 !important;
 }

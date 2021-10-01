@@ -29,6 +29,7 @@ function Header({ menuClickedFunction }) {
                 <i className="fas fa-sign-out-alt"></i>
               </button>
             )}
+            <li>
             {user.isLoggedIn ? (
                 <ul className="acciones">
               <button
@@ -40,6 +41,7 @@ function Header({ menuClickedFunction }) {
               </button>
                 </ul>
               ) : null}
+              </li>
           </li>
         </ul>
       </div>
