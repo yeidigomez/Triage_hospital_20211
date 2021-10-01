@@ -23,15 +23,16 @@ function App() {
     <Router>
       <UserContext.Provider value={{ user, setUser }}>
         <Switch>
+         {/* <Layout path="/login">
+            <Login />
+          </Layout>  */}
           <Layout path="/pacientes">
             <Pacientes />
           </Layout>
           <Layout path="/paciente/:id">
             <Paciente />
           </Layout>
-          <Layout path="/login">
-            <Login />
-          </Layout>
+          
           <Layout path="/ingreso-paciente/:id?">
             <IngresoPaciente />
           </Layout>
@@ -39,7 +40,7 @@ function App() {
             <BusquedaPaciente />
           </Layout>
           <Layout exact path="/">
-            <Paciente />
+            <Login  />
           </Layout>
         </Switch>
       </UserContext.Provider>

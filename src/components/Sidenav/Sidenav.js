@@ -19,7 +19,7 @@ function Sidenav({ open, menuClickedFunction }) {
           </Link>
         </li>
         <li>
-          <Link to="/series">
+          <Link to="/Buscar-Paciente/:1">
             <i className="fas fa-user-edit"></i> Modificar paciente
           </Link>
         </li>

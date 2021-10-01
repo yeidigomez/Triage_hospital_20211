@@ -15,20 +15,13 @@ function Header({ menuClickedFunction }) {
     /* CABECERA */
     <header id="cabecera">
       <div className="contenedor">
-        <button
-          id="boton-menu-principal"
-          className="boton-icono"
-          onClick={() => menuClickedFunction()}
-        >
-          <i className="fas fa-bars"></i>
-        </button>
         <a href="/" className="logo">
           Hospital Divino niño
         </a>
         <ul id="botones-cabecera">
           <li>
             {!user.isLoggedIn ? (
-              <Link to="/login" className="boton-login">
+              <Link to="/" className="boton-login">
                 <i className="fas fa-user"></i>
               </Link>
             ) : (
@@ -36,6 +29,17 @@ function Header({ menuClickedFunction }) {
                 <i className="fas fa-sign-out-alt"></i>
               </button>
             )}
+            {user.isLoggedIn ? (
+                <ul className="acciones">
+              <button
+                  id="boton-menu-principal"
+                  className="boton-icono"
+                  onClick={() => menuClickedFunction()}
+                >
+                  <i className="fas fa-bars"></i>
+              </button>
+                </ul>
+              ) : null}
           </li>
         </ul>
       </div>
