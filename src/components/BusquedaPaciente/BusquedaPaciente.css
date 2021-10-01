@@ -1,9 +1,24 @@
 Form {
     color: rgb(255, 255, 255);
   }
-  Form button {
-    width: auto !important;
-    border: none !important;
-    padding: 10px 20px !important;
-  }
+
+Form button {
+  width: auto !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  
+}
+
+
+#formulario1 {
+  margin-left: 55px;
+}
+
+#formulario2 {
+  margin-left: 10px;
+}
+
+
+
+
   
