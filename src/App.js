@@ -1,15 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import Login from "./components/Login/Login";
-
-import GuardarPelicula from "./components/GuardarPelicula/GuardarPelicula";
+// <<<<<<< HEAD
+import IngresoPaciente from "./components/IngresoPaciente/IngresoPaciente";
 import BusquedaPaciente from "./components/BusquedaPaciente/BusquedaPaciente";
-
+// =======
 import Layout from "./Layout";
 import Pacientes from "./components/Pacientes/Pacientes";
 import Paciente from "./components/Paciente/Paciente";
-import IngresoPaciente from "./components/IngresoPaciente/IngresoPaciente";
-
+// import IngresoPaciente from "./components/IngresoPaciente/IngresoPaciente";
+// >>>>>>> e96d40b0d93e40cc20eb8cb417a51e177cfad2a1
 import { UserContext } from "./contexts/UserContext";
 import { useState } from "react";
 

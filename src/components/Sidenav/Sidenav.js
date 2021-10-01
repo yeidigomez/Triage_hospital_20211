@@ -14,7 +14,7 @@ function Sidenav({ open, menuClickedFunction }) {
       </button>
       <ul>
         <li>
-          <Link to="/peliculas">
+          <Link to="/ingreso-paciente">
             <i className="fas fa-user-plus"></i> Ingresar paciente 
           </Link>
         </li>
@@ -24,7 +24,7 @@ function Sidenav({ open, menuClickedFunction }) {
           </Link>
         </li>
         <li>
-          <Link to="/actores">
+          <Link to="/Buscar-Paciente">
             <i className="fas fa-search"></i> Buscar paciente
           </Link>
         </li>
