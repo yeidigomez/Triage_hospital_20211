@@ -115,7 +115,7 @@ function GuardarPelicula() {
             <Form.Label>Ciudad de Nacimiento</Form.Label>
             <Form.Control
               type="text"
-              step=".1"
+              // step=".1"
               placeholder="Ciudad de Nacimiento"
               name="ciudad"
               onChange={handleChange}
@@ -128,7 +128,7 @@ function GuardarPelicula() {
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridTipo">
             <Form.Label>Tipo de Documento</Form.Label>
-            <Form.Select defaultValue="EPS">
+            <Form.Select defaultValue="Tipo">
               <option>Cédula de Ciudadania</option>
               <option>Registro Civil</option>
               <option>Tarjeta de Identidad</option>

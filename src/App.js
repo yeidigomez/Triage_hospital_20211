@@ -5,6 +5,7 @@ import Peliculas from "./components/Peliculas/Peliculas";
 import Pelicula from "./components/Pelicula/Pelicula";
 import Login from "./components/Login/Login";
 import GuardarPelicula from "./components/GuardarPelicula/GuardarPelicula";
+import BusquedaPaciente from "./components/BusquedaPaciente/BusquedaPaciente";
 import { UserContext } from "./contexts/UserContext";
 import { useState } from "react";
 
@@ -29,6 +30,9 @@ function App() {
           </Layout>
           <Layout path="/guardar-pelicula/:id?">
             <GuardarPelicula />
+          </Layout>
+          <Layout path="/Buscar-Paciente/:id?">
+            <BusquedaPaciente />
           </Layout>
           <Layout exact path="/">
             <Peliculas />

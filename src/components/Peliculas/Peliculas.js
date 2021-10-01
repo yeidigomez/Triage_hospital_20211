@@ -42,7 +42,8 @@ function Peliculas() {
             id="boton-crear-pelicula"
             className="boton-icono"
             title="Crear pelicula"
-            onClick={() => history.push("/guardar-pelicula")}
+            // onClick={() => history.push("/guardar-pelicula")}
+            onClick={() => history.push("/Buscar-Paciente")}
           >
             <i class="fas fa-plus-circle"></i>
           </button>

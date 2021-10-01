@@ -1,0 +1,9 @@
+Form {
+    color: rgb(179, 66, 66);
+  }
+  Form button {
+    width: auto !important;
+    border: none !important;
+    padding: 10px 20px !important;
+  }
+  
