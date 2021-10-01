@@ -1,4 +1,4 @@
-import "./Peliculas.css";
+import "./Pacientes.css";
 import { useState, useEffect, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { UserContext } from "../../contexts/UserContext";
