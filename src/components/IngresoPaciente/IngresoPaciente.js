@@ -64,10 +64,10 @@ function GuardarPelicula() {
  
   return (
     <>
-      <h1 className="mb-5">
-        <i className="fas fa-film"></i> Registro de Paciente
+      <h1 className="mb-0">
+        <i className=""></i> Registro de Paciente
       </h1>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} className="mt-4">
         <Form.Group className="mb-3" controlId="formGroupNombres">
           <Form.Label>Nombres</Form.Label>
           <Form.Control
@@ -129,16 +129,16 @@ function GuardarPelicula() {
           <Form.Group as={Col} controlId="formGridTipo">
             <Form.Label>Tipo de Documento</Form.Label>
             <Form.Select defaultValue="Tipo">
-              <option>Cédula de Ciudadania</option>
+              <option>Cédula de Ciudadanía</option>
               <option>Registro Civil</option>
               <option>Tarjeta de Identidad</option>
-              <option>Cédula extranjera</option>
+              <option>Cédula de extranjería</option>
               <option>Otro</option>
             </Form.Select>
           </Form.Group> 
  
           <Form.Group as={Col} controlId="formGridCDocumento">
-            <Form.Label>Numero de Documento</Form.Label>
+            <Form.Label>Número de Documento</Form.Label>
             <Form.Control />
           </Form.Group>
  
@@ -157,18 +157,18 @@ function GuardarPelicula() {
         </Row>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Email Opcional" />
+            <Form.Label>Correo electrónico</Form.Label>
+            <Form.Control type="email" placeholder="Correo electrónico (Opcional)" />
           </Form.Group>
         </Row>
  
         <Form.Group className="mb-3" controlId="formGridAddress1">
-          <Form.Label>Direccion</Form.Label>
-          <Form.Control placeholder="Direccion de Residencia Opcional" />
+          <Form.Label>Dirección</Form.Label>
+          <Form.Control placeholder="Dirección de Residencia (Opcional)" />
         </Form.Group>
  
         <Form.Group className="mb-3" id="formGridCheckbox">
-          <Form.Check type="checkbox" label="No soy un robot" />
+          <Form.Check type="checkbox" label="No soy un robot." />
         </Form.Group>
  
         </Form.Group>
