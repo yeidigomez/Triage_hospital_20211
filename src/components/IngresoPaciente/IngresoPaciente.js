@@ -1,4 +1,4 @@
-import "./GuardarPelicula.css"; //importar el css
+import "./IngresoPaciente.css"; //importar el css
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

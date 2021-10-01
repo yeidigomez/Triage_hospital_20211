@@ -1,11 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import Layout from "./Layout";
-import Peliculas from "./components/Peliculas/Peliculas";
-import Pelicula from "./components/Pelicula/Pelicula";
 import Login from "./components/Login/Login";
+
 import GuardarPelicula from "./components/GuardarPelicula/GuardarPelicula";
 import BusquedaPaciente from "./components/BusquedaPaciente/BusquedaPaciente";
+
+import Layout from "./Layout";
+import Pacientes from "./components/Pacientes/Pacientes";
+import Paciente from "./components/Paciente/Paciente";
+import IngresoPaciente from "./components/IngresoPaciente/IngresoPaciente";
+
 import { UserContext } from "./contexts/UserContext";
 import { useState } from "react";
 
@@ -19,23 +23,23 @@ function App() {
     <Router>
       <UserContext.Provider value={{ user, setUser }}>
         <Switch>
-          <Layout path="/peliculas">
-            <Peliculas />
+          <Layout path="/pacientes">
+            <Pacientes />
           </Layout>
-          <Layout path="/pelicula/:id">
-            <Pelicula />
+          <Layout path="/paciente/:id">
+            <Paciente />
           </Layout>
           <Layout path="/login">
             <Login />
           </Layout>
-          <Layout path="/guardar-pelicula/:id?">
-            <GuardarPelicula />
+          <Layout path="/ingreso-paciente/:id?">
+            <IngresoPaciente />
           </Layout>
           <Layout path="/Buscar-Paciente/:id?">
             <BusquedaPaciente />
           </Layout>
           <Layout exact path="/">
-            <Peliculas />
+            <Paciente />
           </Layout>
         </Switch>
       </UserContext.Provider>
