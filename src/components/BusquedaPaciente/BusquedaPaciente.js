@@ -38,7 +38,7 @@ function BusquedaPaciente() {
     return (
         <>
         <h1 className="titulo">
-          <i className=""></i> Búsqueda de Pacientes
+          <i className="fas fa-search text-black"></i> Búsqueda de Pacientes
         </h1>
         <br>
 

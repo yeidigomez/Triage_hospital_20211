@@ -65,7 +65,7 @@ function GuardarPelicula() {
   return (
     <>
       <h1 className="mb-5">
-        <i className="fas fa-film"></i> Registro de Paciente
+        <i className="fas fa-user-plus text-black"></i> Registro de Paciente
       </h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formGroupNombres">
