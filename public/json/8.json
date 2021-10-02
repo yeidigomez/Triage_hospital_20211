@@ -1,3 +1,11 @@
 {
-
-}
+    "id": 1,
+    "Nombres": "Cristian",
+    "Apellidos": "Londoño",
+    "TipoDocumento":"CC",
+    "Documento": "2323232",
+    "Ciudad": "Medellin",
+    "Fecha": "01/12/1990",
+    "EPS": "Sura",
+    "Email":"Cristian@gmail.com"
+  }
