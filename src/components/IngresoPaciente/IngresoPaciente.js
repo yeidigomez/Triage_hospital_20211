@@ -238,6 +238,17 @@ function GuardarPaciente() {
           <Form.Control placeholder="Direccion de Residencia Opcional" />
         </Form.Group>
 
+        <Form.Group className="mb-3" controlId="floatingTextarea2" label="Profesional">
+        <Form.Label>Profesional asignado</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="profesional"
+            name="profesional"
+            onChange={handleChange}
+            value={formData.profesional}
+          />
+        </Form.Group>
+
         <Form.Group className="mb-3" controlId="floatingTextarea2" label="Descripción urgencia">
         <Form.Label>Descripción urgencia</Form.Label>
           <Form.Control
@@ -249,6 +260,7 @@ function GuardarPaciente() {
             value={formData.Descripcion}
           />
         </Form.Group>
+
  
         </Form.Group>
 
