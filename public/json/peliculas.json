@@ -1,8 +1,4 @@
-[
-  {
-
-  }
-  [{
+[{
     "id": 1,
     "Nombres": "Hola",
     "Apellidos": "Mundo",
@@ -10,7 +6,9 @@
     "Ciudad de Nacimiento": "Medellin",
     "Fecha de nacimiento": "01/12/1990",
     "EPS": "Sura",
-      "Email":""
+    "Email":"",
+    "Triage":"5",
+    "Hora": "12:35"
   },{
     "id": 2,
     "Nombres": "Cristian",
@@ -19,7 +17,9 @@
     "Ciudad de Nacimiento": "Medellin",
     "Fecha de nacimiento": "01/12/1990",
     "EPS": "Sura",
-    "Email":""
+    "Email":"",
+    "Triage":"5",
+    "Hora": "12:35"
   },{
     "id": 3,
     "Nombres": "Yeindi",
@@ -28,7 +28,9 @@
     "Ciudad de Nacimiento": "Medellin",
     "Fecha de nacimiento": "01/12/1990",
     "EPS": "Sura",
-    "Email":""
+    "Email":"",
+    "Triage":"5",
+    "Hora": "12:35"
   },{
     "id": 4,
     "Nombres": "Andrey",
@@ -37,5 +39,7 @@
     "Ciudad de Nacimiento": "Medellin",
     "Fecha de nacimiento": "01/12/1990",
     "EPS": "Sura",
-    "Email":""
+    "Email":"",
+    "Triage":"5",
+    "Hora": "12:35"
   }]

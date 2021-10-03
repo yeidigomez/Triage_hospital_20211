@@ -7,5 +7,8 @@
     "Ciudad": "Medellin",
     "Fecha": "01/12/1990",
     "EPS": "Sura",
-    "Email":"Cristian@gmail.com"
+    "Email":"Cristian@gmail.com",
+    "Triage":"5",
+    "Hora": "12:35",
+    "Descripcion":"Fractura tibia y peroné ocasionado por un accidente de tránsito"
   }

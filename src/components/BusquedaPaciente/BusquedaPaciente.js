@@ -1,38 +1,18 @@
 import "./BusquedaPaciente.css"; //importar el css
 import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 import Button from "react-bootstrap/Button";
-import Spinner from "react-bootstrap/Spinner";
+
 import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
-import React, { useReducer, useEffect } from "react";
-import { useParams } from "react-router-dom";
 
-const formReducer = (state, data) => {
-    if (data.isEvent) {
-      return {
-        ...state,
-        [data.name]: data.value,
-      };
-    }
-    return {
-      ...data,
-    };
-  };
+
   
 
 function BusquedaPaciente() {
-    const { id } = useParams();
-    const [formData, setFormData] = useReducer(formReducer, {});
+
    
-    useEffect(() => {
-      if (id) {
-        fetch(`http://localhost:3000/json/${id}.json`)
-          .then((response) => response.json())
-          .then((data) => setFormData(data));
-      }
-    }, [id]);
+ 
    
   
     return (

@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 // import Input from "react-bootstrap/input";
 import React, { useReducer, useEffect } from "react";
 import { useParams } from "react-router-dom";
+
  
 // async function guardarPelicula(pelicula, id) {
 //   let url = 'http://localhost:8080/guardar-pelicula';
@@ -33,7 +34,7 @@ const formReducer = (state, data) => {
   };
 };
  
-function GuardarPelicula() {
+function GuardarPaciente() {
   const { id } = useParams();
   const [formData, setFormData] = useReducer(formReducer, {});
  
@@ -182,6 +183,43 @@ function GuardarPelicula() {
           </Form.Group>          
         </Row>
         
+        <Row>
+          <Form.Group
+            as={Col}
+            sm="12"
+            md="6"
+            lg="4"
+            className="mb-3"
+            controlId="formGroupNacimiento"
+          >
+            <Form.Label>Triage</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Ingrese el triage del paciente"
+            name="Triage"
+            onChange={handleChange}
+            value={formData.Triage}
+          />
+          </Form.Group>
+          {/* <div className="d-flex justify-content-xxl-between"> */}
+          <Form.Group
+            as={Col}
+            sm="12"
+            md="6"
+            lg="4"
+            className="mb-3"
+            controlId="formGroupCiudad"
+          >
+            <Form.Label>Hora de ingreso</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Ingrese la hora de ingreso del Paciente"
+            name="Hora"
+            onChange={handleChange}
+            value={formData.Hora}
+          />
+          </Form.Group>
+        </Row>
 
         <Form.Group className="mb-3" controlId="formGroupEMail">
           <Form.Label>Email</Form.Label>
@@ -199,10 +237,22 @@ function GuardarPelicula() {
           <Form.Label>Direccion</Form.Label>
           <Form.Control placeholder="Direccion de Residencia Opcional" />
         </Form.Group>
- 
+
+        <Form.Group className="mb-3" controlId="floatingTextarea2" label="Descripción urgencia">
+        <Form.Label>Descripción urgencia</Form.Label>
+          <Form.Control
+            as="textarea"
+            placeholder="Descripción urgencia opcional"
+            style={{ height: '100px' }}
+            name="Descripcion"
+            onChange={handleChange}
+            value={formData.Descripcion}
+          />
+        </Form.Group>
  
         </Form.Group>
-        <Button variant="primary" type="submit">
+
+        <Button variant="secondary" size="lg" type="submit">
           Registrar
         </Button>
       </Form>
@@ -211,4 +261,4 @@ function GuardarPelicula() {
 }
  
  
-export default GuardarPelicula;
+export default GuardarPaciente;

@@ -32,10 +32,10 @@ function App() {
           <Layout path="/paciente/:id">
             <Paciente />
           </Layout>
-          
           <Layout path="/ingreso-paciente/:id?">
             <IngresoPaciente />
           </Layout>
+
           <Layout path="/Buscar-Paciente/:id?">
             <BusquedaPaciente />
           </Layout>
